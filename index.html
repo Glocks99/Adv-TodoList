@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-cont">
+      <form>
+        <input type="search" />
+        <button>Add Todo</button>
+      </form>
+
+      <div class="todo-list-cont">
+        <h3>
+          pending Tasks
+          <div class="search">
+            <input type="text" class="s-p" placeholder="search todo..." /><span
+              ><img src="icons/search.svg" alt="" class="srhImg"
+            /></span>
+          </div>
+        </h3>
+        <div class="pending-list js-pending-list"></div>
+        <h3>
+          completed Tasks
+          <div class="search s-c">
+            <input type="text" class="s-c" placeholder="search todo..." /><span
+              ><img src="icons/search.svg" alt="" class="srhImg"
+            /></span>
+          </div>
+        </h3>
+        <div class="completed-list js-completed-list">
+          <div class="todo-block completed">
+            <div class="extra">
+              <span>completed &checkmark;</span>
+              <div class="time">10:30 AM</div>
+            </div>
+            <div class="completed-block">
+              <img src="icons/done.svg" alt="" />
+              <div class="todo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, exercitationem laborum a incidunt, quidem
+                asperiores reiciendis cumque commodi ad assumenda voluptatum
+                obcaecati dolore itaque, nisi ipsam laudantium nesciunt
+                explicabo minima.
+              </div>
+              <div class="actions">
+                <button><img src="icons/delete.svg" alt="" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/script.js" type="module"></script>
+  </body>
+</html>
